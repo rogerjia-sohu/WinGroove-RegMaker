@@ -1,0 +1,18 @@
+#include "\masm32\include\resource.h"
+#define IDC_GROUPBOX1                   101
+#define IDC_MAKE                        2001
+#define IDC_RELOAD                      2002
+#define IDC_EXIT                        2003
+
+IDI_MAIN                ICON                    "main001.ico"
+
+WGREGMAKEDLG DIALOG 72, 68, 210, 63
+STYLE DS_SYSMODAL | DS_CENTER | DS_MODALFRAME | DS_NOIDLEMSG | 0x808L | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX
+CAPTION "WinGroove0.A5 RegMaker"
+FONT 8, "MS Sans Serif"
+{
+ DEFPUSHBUTTON "&Make it", IDC_MAKE, 20, 42, 50, 14, BS_FLAT
+ PUSHBUTTON "&Reload", IDC_RELOAD, 80, 42, 50, 14, BS_FLAT
+ PUSHBUTTON "&Exit", IDC_EXIT, 140, 42, 50, 14, BS_FLAT
+ CTEXT "Code in MASM32 by RogerJia@HoTMaiL.Com", 100, 14, 27, 182, 11, 0
+}
